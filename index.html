@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <title>El Ahorcado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-bl from-teal-950 via-emerald-900 to-slate-900 text-emerald-50 min-h-screen h-screen m-0 p-0 overflow-hidden flex items-center justify-center">
+
+   <!-- Контейнер root растягиваем на весь экран по центру, чтобы карточка встала идеально -->
+   <div id="root" class="w-full h-full flex items-center justify-center p-2 sm:p-4"></div>
+
+   <!-- Подключаем скрипты в правильном порядке -->
+   <script src="./js/palabras.js"></script>
+   <script>window.palabras = PALABRAS;</script>
+   <script type="text/babel" src="./js/App.js"></script>
+  </body>
+</html>
